@@ -1,0 +1,1377 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+    letter-spacing: normal;
+}
+body{
+    background-color: #713912;
+}
+
+
+
+/* suarez header css start */
+
+.head {
+    background-color: rgb(118 59 19);
+    width: 100%;
+
+}
+
+
+
+
+div .i,
+.i1 {
+    display: inline-block;
+    flex-direction: row;
+}
+
+.i img {
+    width: 70px;
+}
+
+.icon1{
+    height: 60px;
+    transform: transition .2s;
+}
+.icon2{
+    height: 60px;
+}
+
+#a {
+    float: left;
+    margin-top: 55px;
+    margin-left: 20px;
+}
+
+#b {
+    float: left;
+    margin-top: 60px;
+    margin-left: -15px;
+}
+
+
+
+#c {
+    text-align: center;
+    margin-left: 9%;
+
+}
+
+#d {
+    float: right;
+
+    margin-top: 55px;
+    margin-right: 15px;
+    /* float: right;
+    top: 0px; */
+
+
+}
+
+
+
+
+.form {
+    
+    border: none;
+    border-bottom: 1px solid #fff;
+
+}
+
+
+
+.i input[type="text"] {
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+   border: none;
+   background-color: transparent;
+    
+    color: #fff;
+    background-color: rgb(118 59 19);
+
+}
+
+.form input::placeholder{
+    color: white;
+}
+
+.navbar{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #FFEA9E;
+    align-items: center;
+    padding: 15px 30px;
+    width: 100%;
+transform: none;
+}
+
+    
+.navbar a{
+    float: left;
+    justify-content: center;
+    font-size: 16px;
+    color: #713912;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.dropdown{
+    float: right;
+    overflow: hidden;
+
+}
+.dropdown .drop{
+    font-size: 15px;
+    border: none;
+    outline: none;
+    color: #713912;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    font-weight:bold;
+}
+.navbar a:hover, .drop:hover{
+    border-bottom: solid #fff;
+}
+.ddcontent{
+    display: none;
+    position: absolute;
+    background-color:#FFEA9E;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,0.2);
+    z-index: 1;
+}
+.ddcontent a{
+    float: none;
+    color: #713912;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+}
+.ddcontent:hover{
+    background-color: #FFEA9E;
+}
+.dropdown:hover .ddcontent{
+    display: block;
+}
+
+.container{
+    background-color: #fed169;
+    padding-bottom: 30px ;
+}
+.icon2:hover, .icon1:hover{
+    transform: scale(1.4);
+}
+.f:hover{
+    border:none!important;
+    padding: 0!important;
+    margin: 0!important;
+}
+.pic{
+    padding: 250px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    align-items: center;
+    height: auto;
+    background-image: url(pics/alvan-nee-eoqnr8ikwFE-unsplash.jpg);
+    background-position-y: -80px;
+    
+}
+.pic2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+     margin-top: 80px; 
+     text-shadow: black;
+
+
+}
+.pic2 h2{
+    font-size: 30px;
+    text-shadow: 0px 0px 5px 2px  black;
+    stroke: black;
+    font-family: Arial;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: none;
+    
+}
+#white{
+    opacity: 0.3;
+    align-items: center;
+    width: 100px;
+    height: 300px;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+#shopbutton{
+    /* margin-top: 200px; */
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #713912;
+    color: #F7B319;
+    padding: 15px 25px;
+    border: transparent;
+    font-size: 20px;
+    transition: transform .2s;
+    margin-top: 180px;
+    border-radius: 40px;
+}
+
+#shopbutton:hover{
+    background-color:#F7B319;
+    color: #713912;
+    transform: scale(1.05)
+}
+#choose{
+    font-weight: bold;
+    text-align: center;
+    color: #ffff;
+    padding: 20px;
+    font-size: 30px;
+    background-color:#713912;
+}
+.lightcontainer{
+    display: flex;
+    background-color: #fed169;
+    padding: 10px;
+    float: left;
+    width: 100%;
+    align-items: center;
+    height: 750px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.darkcontainer{
+    display: flex;
+    background-color: #713912;
+    padding-right: 0px;
+    float: right;
+    width: 100%;
+    align-items: center;
+    height: 750px;
+}
+.adarkcontainer{
+    display: flex;
+    background-color: #713912;
+    padding: 80px;
+    justify-content: center;
+    max-width: 500px;
+}
+.textcontainer{
+    background-color:#F7B319 ;
+    width: 91%;
+    padding: 10px;
+   
+    margin-right: 20px;
+    margin-left: -20px;
+    height: 750px;
+    font-size: 17px;
+    text-align: justify;
+    padding-left: 250px;
+
+}
+.textcontainer p{
+    width: 94%;
+    padding-left: 3%;
+    text-align: justify;
+    font-size: 17px;
+    margin-left: -115px;
+    
+}
+
+.textcontainer2 p{
+    width: 105%;
+    padding-left: 220px;
+    text-align: justify;
+    font-size: 17px;
+    margin-left: -115px;
+    
+    
+}
+
+.textcontainer h3{
+    margin-top: 20px;
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-left: -100px;
+    color: #713912;
+}
+
+.textcontainer2 h3{
+    margin-top: 20px;
+   padding-left: 100px;
+    font-size: 50px;
+    margin-bottom: 10px;
+    
+    color: #713912;
+}
+
+
+
+.textcontainer3 h3 {
+    margin-top: 20px;
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    color: #713912;
+}
+
+.textcontainer3 p{
+width: 80%;
+padding-left: 3%;
+text-align: justify;
+font-size: 17px;
+margin-left: 100px;
+
+}
+
+.textcontainer2{
+    background-color: #F7B319;
+    width: 91%;
+    padding: 10px;
+    font-size: 19px;
+    height: 750px;
+    margin-left: -30px;
+
+}
+.textcontainer3{
+    background-color: #F7B319;
+    width: 93%;
+    padding: 10px;
+    margin-right: 0%;
+    height: 750px;
+    font-size: 22px;
+    padding-right: 30px;
+    
+
+}
+
+.atextcontainer{
+    background-color:#fed169;
+    border-radius: 40px;
+    padding: 30px;
+    text-align: center;
+    width: 80%;
+    margin: 10%;
+   
+  
+}
+
+
+
+.img{
+    max-width: 100%;
+}
+.bear{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.bear img{
+    max-width: 100%;
+    transition: transform 0.5s;
+    height: 650px;
+}
+#bear img:hover{
+    transform: scale(2);
+}
+.charlie, .bubbles{
+    width: 100%;
+    display: flex;  
+    align-items: center;
+    float: left;
+}
+#charlie1{
+    margin-left: 150px;
+    height: 650px;
+}
+#bubbles1{
+    margin-left: 70px;
+    height: 650px;
+    
+}
+#daffy1{
+    margin-right: 107px;
+    height: 650px;
+    padding-left: 90px;
+}
+.daffy{
+    max-width: 100%;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bearmore,#daffymore{
+    margin-top: 20px;
+    background-color: rgba(222, 156, 0, 0.6);
+    border-radius: 20px;
+    padding: 15px; 
+    border: transparent;
+    color: white;
+}
+#bubblesmore{
+    margin-top: 20px;
+    background-color: rgba(154, 148, 136, 0.6);
+    border-radius: 20px;
+    border-color: transparent;
+    padding: 10px;
+    color: white;
+    width: 170px;
+
+}
+#bubblesmore {
+    color: white;
+    /* margin-top: 5px; */
+
+}
+
+
+#bubblesmore,#bearmore,#daffymore,#charliemore{
+    margin-left: 3%;
+    transform: transition .2s;
+    
+}
+#bubblesmore:hover,#bearmore:hover,#daffymore:hover,#charliemore:hover{
+    transform: scale(1.4);
+}
+
+#bubblesmore:hover,#bearmore:hover,#daffymore:hover,#charliemore:hover{
+    background-color: #FFEA9E;
+    color: black;
+}
+#charliemore{
+    margin-top: 20px;
+    background-color: rgba(222, 156, 0, 0.6);
+    border-radius: 20px;
+    padding: 15px; 
+    border: transparent;
+    color: white;
+}
+#transparenttext{
+    position: center;
+    color: black!important;
+
+}
+#transparenttext1{
+    position: center;
+    color: #713912!important;
+    /* font-weight: bold; */
+    font-size: 35px;
+  
+}
+#aboutb{
+    border-radius: 50px;
+    color: white;
+    background-color: #713912;
+    padding: 10px 20px;
+    border: none;
+}
+#aboutb:hover{
+    background-color: #F7B319;
+    color: black;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+
+}
+.icons img{
+    height: 40px;
+    padding: 0px 5px;
+    transform: transition .5s;
+}
+.icons img:hover{
+    transform: scale(1.5);
+    
+}
+.icons img::after{
+    transform:scale(1);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.to-top img {
+    position: fixed;
+    bottom: 16px;
+    right: 20px;
+    width: 45px;
+    height: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1f1f1f;
+    transition: all 4s;
+    opacity: 1;
+
+  }
+  
+  .to-top.hidden img {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  
+
+
+.footer{
+    background-color: #713912;
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+}
+.footer h5, .footer a{
+    margin-right: 50px; 
+}
+.pcategory{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+.aboutus, .services, .openinghours{
+    display: flex;
+    flex-direction: column;
+    padding-left: 109px;
+}
+.pcategory a, .aboutus a, .services a, .openinghours a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding-bottom: 20px;
+}
+.pcategory h5, .aboutus h5, .services h5, .openinghours h5{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.services img{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+.container-new{
+    width: 80%;
+    margin: 50px auto;
+    color: white;
+    margin-bottom: 80px;
+}
+#contacti{
+    margin-bottom: 30px;
+}
+.contact-box{   
+    background-color: #713912;
+    display: flex;
+}
+.contact-left{
+    flex-basis: 40%;
+    padding: 40px 60px;
+    background-image: url(pics/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -20px;
+    color: white;
+    stroke: 30px solid black;
+    transition: transform 0.5s;
+}
+.contact-left:hover, td tr{
+    transform: scale(1.1);
+}
+.contact-right{
+    flex-basis: 60%;
+    padding: 40px 60px;
+    background-color:#FFEA9E;
+    color: black;
+}
+.container-new h1{
+    margin-bottom: 20px;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row, .input-group{
+    flex-basis: 45%;
+}
+input{
+    width: 100%;
+    border: none;
+    padding-bottom: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+textarea{
+    width: 100%;
+    border: 3px solid white;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+label{
+    margin-bottom: 6px;
+    display: block;
+    font-weight: 700;
+}
+form button{
+    background-color:#713912;
+    color: white;
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+table img{
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+}
+
+#center{
+    margin-top: 25px;
+    font-weight: 600;
+}
+input:active{
+    background-color: white;
+}
+textarea:active{
+    background-color: white;
+}
+input:selection{
+    background-color: white;
+}
+form button:hover{
+    background-color:#333333;
+    border: none;
+}
+
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%)scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333; 
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%)scale(1);
+}
+.popup img{
+    width: 100px;
+    margin-top: 50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.2);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+.change{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%)scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333; 
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-change{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%)scale(1);
+}
+.flash-message img{
+    width: 70px;
+    height:34px;
+    padding-left: 30px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.2);
+}
+.flash-message {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  .success-image {
+    display: block;
+    margin: 0 auto; 
+    text-align: center; 
+  }
+  .back-button {
+    background-color: #713912;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    width: 100px;
+    height: 35px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+    font-size: 13px;
+  }
+  
+  .back-button:hover {
+    background-color: #333333;
+  }
+  
+  @media (min-width: 1251px) and (max-width: 1500px){
+    .header, .navbar, .univcontainer, .footer, .pic, .pic2,.textcontainer,.smallheader, .contact-form textarea{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #charlie1{
+        display: flex;
+        float: none;
+        width: 40%;
+        height: 400px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #bear1{
+        display: flex;
+        width: 15%;
+        height: auto;
+        float: none;
+    }
+    .daffy{
+        padding: 0;
+        margin: 0;
+        max-width: 40%;
+    }
+    #daffy1{
+        display: flex;
+        width: 55%;
+        height: 50%;
+    }
+    #bubbles1{
+        display: flex;
+        width: 20%;
+        height: auto;
+        margin-left: 500px;
+    }
+    .textcontainer h3, .textcontainer1 h3, .textcontainer2 h3, .textcontainer3 h3{
+        font-size: 25px;
+        text-align: center;
+    }
+    #bearh3{
+        text-align: center;
+        margin-right: 105px;
+    }
+    .textcontainer p, .textcontainer3 p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .charlie{
+        margin-left: 220px;
+        margin-bottom: 20px;
+        max-width: 50%;
+    }
+    .textcontainer3{
+        max-width: 100%;
+        height: 110%;
+    }
+    .textcontainer2 p{
+    font-size: 16px;
+        text-align: center;
+    }
+    .textcontainer2 h3{
+        margin-left: 0;
+        margin-right: 50px;
+    }
+    .textcontainer button{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    #charliemore{
+        padding: 10px;
+        margin-left: 50px;
+    }
+    #daffymore{
+        padding: 15px;
+        margin-top: 400px;
+    }
+    #bubblesmore p{
+        padding: 8px;
+        margin: 0;
+    }
+    #charlie1, #bubbles1{
+        display: flex;
+        float: none;
+    }
+    .pic2{
+        background-position: center;
+        background-size: contain;
+        margin-top: -60px;
+        margin-bottom: 30px;
+    }
+    .pic2 h2{
+        margin-top: 900px;
+    }
+    #shopbutton{
+        margin-top: 1050px;
+    #c{
+        margin-right: 0;
+    }
+    }
+    #d img{
+        margin-right: 300px;
+    }
+    .form{
+        flex-direction: column;
+    }
+    .textcontainer a{
+        text-align: left;
+    }
+    .darkcontainer{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    #daffymore,#bearmore{
+        display: flex;
+        float: none;
+        
+    }
+    .lightcontainer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .textcontainer,.textcontainer2,.textcontainer3{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height: 750px;
+        font-size: 30px;
+        width: 100%;
+    }
+    
+    .form{
+        flex-direction: column;
+    }
+    .container-new, .contact-box, .contactcontainer, .input-group, .input-row{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5px;
+    }
+
+    .pic{
+        
+        background-position-y: 0px;
+        background-position-x: -48px;
+        height: auto;
+
+    }
+    #d{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 200px;
+    } 
+
+  
+
+  @media (min-width: 1026px) and (max-width: 1250px){
+    .header, .navbar, .univcontainer, .footer, .pic, .pic2,.textcontainer,.smallheader, .contact-form textarea{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #charlie1{
+        display: flex;
+        float: none;
+        width: 30%;
+        height: auto;
+    }
+    #bubbles1{
+    display: flex;
+    width: 50%;
+    height: auto;
+    }
+    #bear1{
+        display: flex;
+        width: 30%;
+        height: auto;
+        float: none;
+    }
+    #daffy1{
+        display: flex;
+        width: 100%;
+        height: 70%;
+    }
+    .textcontainer h3, .textcontainer1 h3, .textcontainer2 h3, .textcontainer3 h3{
+        font-size: 20px;
+        text-align: center;
+    }
+    #bearh3{
+        text-align: center;
+        margin-right: 105px;
+    }
+    .textcontainer p, .textcontainer2 p, .textcontainer3 p{
+        font-size: 8px;
+        text-align: center;
+    }
+    .textcontainer2 h3{
+        margin-left: 0;
+        margin-right: 50px;
+    }
+    .textcontainer button{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    #charliemore{
+        padding: 10px;
+        margin-left: 50px;
+    }
+    #daffymore{
+        padding: 8px;
+        margin-top: 410px;
+    }
+    #bubblesmore p{
+        padding: 8px;
+        margin: 0;
+    }
+    #charlie1, #bubbles1{
+        display: flex;
+        float: none;
+    }
+    .pic2{
+        background-position: center;
+        background-size: contain;
+        margin-top: -60px;
+        margin-bottom: 30px;
+    }
+    .pic2 h2{
+        margin-top: 500px;
+    }
+    #shopbutton{
+        margin-top: 650px;
+    #c{
+        margin-right: 0;
+    }
+    }
+    #d img{
+        margin-right: 300px;
+    }
+    .form{
+        flex-direction: column;
+    }
+    .textcontainer a{
+        text-align: left;
+    }
+    .darkcontainer{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    #daffymore,#bearmore{
+        display: flex;
+        float: none;
+        
+    }
+    .lightcontainer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .textcontainer,.textcontainer2,.textcontainer3{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height: 750px;
+        font-size: 30px;
+        width: 100%;
+    }
+    
+    .form{
+        flex-direction: column;
+    }
+    .container-new, .contact-box, .contactcontainer, .input-group, .input-row{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5px;
+    }
+
+    .pic{
+        
+        background-position-y: 0px;
+        background-position-x: -200px;
+        height: auto;
+
+    }
+    #d{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 200px;
+    } 
+
+    @media (min-width: 481px) and (max-width: 1025px){
+        #headercontainer, .header, .navbar, .univcontainer, .footer, .pic, .pic2,.textcontainer,.smallheader, .contact-form textarea{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        #charlie1{
+            display: flex;
+            float: none;
+            width: 30%;
+            height: auto;
+        }
+        #bubbles1{
+        display: flex;
+        width: 50%;
+        height: auto;
+        }
+        #bear1{
+            display: flex;
+            width: 30%;
+            height: auto;
+            float: none;
+        }
+        #daffy1{
+            display: flex;
+            width: 70%;
+            height: 70%;
+        }
+        .textcontainer h3, .textcontainer1 h3, .textcontainer2 h3, .textcontainer3 h3{
+            font-size: 20px;
+            text-align: center;
+        }
+        #bearh3{
+            text-align: center;
+            margin-right: 105px;
+        }
+        .textcontainer p, .textcontainer2 p, .textcontainer3 p{
+            font-size: 9px;
+            text-align: center;
+        }
+        .textcontainer2 h3{
+            margin-left: 0;
+            margin-right: 50px;
+        }
+        .textcontainer button{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        #charliemore{
+            padding: 10px;
+            margin-left: 50px;
+        }
+        #daffymore {
+            padding: 8px;
+            margin-top: 330px;
+            justify-content: center;
+            display: flex;
+        }
+        #bubblesmore p{
+            padding: 8px;
+            margin: 0;
+        }
+        #charlie1, #bubbles1{
+            display: flex;
+            float: none;
+        }
+        .pic2{
+            background-position: center;
+            background-size: contain;
+            margin-top: 200px;
+            margin-bottom: 30px;
+        }
+        #headercontainer{
+            display: block;
+        }
+        .textcontainer p, .text
+        .pic img{
+            background-position-y: -400px;
+        }
+        .pic2{
+            padding-bottom: 70px;
+        }
+        .pic2 h2{
+            margin-top: 900px;  
+        }
+        #shopbutton{
+            margin-top: 1100px;
+        }
+        .form{
+            flex-direction: column;
+        }
+        .textcontainer a{
+            text-align: left;
+        }
+        .darkcontainer{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+        #daffymore,#bearmore{
+            display: flex;
+            float: none;
+            
+        }
+        .lightcontainer{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    
+        .textcontainer,.textcontainer2,.textcontainer3{
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            height: auto;
+            font-size: 30px;
+            width: 100%;
+        }
+        
+        .form{
+            flex-direction: column;
+        }
+        .container-new, .contact-box, .contactcontainer, .input-group, .input-row{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 5px;
+        }
+    
+        .pic{
+            
+            background-position-y: 0px;
+            background-position-x: -200px;
+            height: auto;
+    
+        }
+        #d{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 200px;
+        } 
+        .form{
+            display: flex;
+            justify-content: center;
+            padding-left: 240px;
+        }
+        .form p{
+            text-align: center;
+        }
+    } 
+}
+     @media (max-width: 480px){
+        .header, .navbar, .univcontainer, .footer, .pic, .pic2,.textcontainer,.smallheader, .contact-form textarea{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        #charlie1{
+            display: flex;
+            float: none;
+            width: 30%;
+            height: auto;
+        }
+        #bubbles1{
+        display: flex;
+        width: 50%;
+        height: auto;
+        }
+        #bear1{
+            display: flex;
+            width: 30%;
+            height: auto;
+            float: none;
+        }
+        #daffy1{
+            display: flex;
+            width: 100%;
+            height: 70%;
+        }
+        .textcontainer h3, .textcontainer1 h3, .textcontainer2 h3, .textcontainer3 h3{
+            font-size: 20px;
+            text-align: center;
+        }
+        #bearh3{
+            text-align: center;
+            margin-right: 105px;
+        }
+        .textcontainer p, .textcontainer2 p, .textcontainer3 p{
+            font-size: 8px;
+            text-align: center;
+        }
+        .textcontainer2 h3{
+            margin-left: 0;
+            margin-right: 50px;
+        }
+        .textcontainer button{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        #charliemore{
+            padding: 10px;
+            margin-left: 50px;
+        }
+        #daffymore{
+            padding: 8px;
+            margin-top: 410px;
+        }
+        #bubblesmore p{
+            padding: 8px;
+            margin: 0;
+        }
+        .pic2{
+            margin-top: 130px;
+            text-align: center;
+        }
+        .form{
+            flex-direction: column;
+        }
+        .textcontainer a{
+            text-align: left;
+        }
+        .darkcontainer{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+        #daffymore,#bearmore{
+            display: flex;
+            float: none;
+            
+        }
+        .lightcontainer{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    
+        .textcontainer,.textcontainer2,.textcontainer3{
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            height: auto;
+            font-size: 30px;
+            width: 100%;
+        }
+        .joshua img{
+            width: 80%;
+            height: 70%;
+        }
+        
+        .form{
+            flex-direction: column;
+        }
+        .container-new, .contact-box, .contactcontainer, .input-group, .input-row{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 5px;
+        }
+    
+        .pic{
+            
+            background-position-y: 0px;
+            background-position-x: -200px;
+            height: auto;
+    
+        }
+        #d{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 200px;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+        #headcontainer, .header, .navbar, .univcontainer, .footer, .pic, .pic2,.textcontainer,.smallheader, .contact-form textarea{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        #headercontainer{
+            display: block;
+        }
+        .pic img{
+            background-position-y: -400px;
+        }
+        .pic2{
+            padding-bottom: 70px;
+        }
+    }
+}

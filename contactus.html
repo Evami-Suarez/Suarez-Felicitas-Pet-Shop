@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Happy Tails! - Contact Us</title>
+</head>
+
+<body>
+    <div class="head">
+        <div>
+        <div class="i" id="a">
+            <img class="searchicon" src="pics/image-removebg-preview (2).png" alt="Searchicon">
+        </div>
+        <div class="i" id="b">
+            <form class="form">
+                <input type="text" id="search-input" name="search" placeholder="Search">
+            </form>
+        </div>
+
+        <div class="i1" id="c">
+            <img src="pics/LOGO-removebg-preview.png" alt="LOGO">
+        </div>
+
+        <div class="i" id="d">
+            <img class="icon1" src="pics/image-removebg-preview (6).png" alt="Cart">
+            <img class="icon2" src="pics/image-removebg-preview (4).png" alt="Profile">
+        </div>
+    </div>
+    </div>
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="aboutus.html">ABOUT</a>
+        <div class="dropdown">
+            <button class="drop">SERVICES
+                <i class="down"></i>
+            </button>
+            <div class="ddcontent">
+
+                <a href="services.html">Pet Sales</a>
+                <a href="services.html">Pet Supplies</a>
+                <a href="services.html">Pet Grooming</a>
+            </div>
+        </div>
+        <a href="contactus.html">CONTACT US</a>
+    </div>
+    <div class="container-new">
+        <h1>CONNECT WITH US!</h1>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h1>Our Info</h1>
+                <table>
+                    <tr>
+                        <td><img src="pics/location.png"></td>
+                        <td>Cagayan de Oro City</td>
+                    </tr>
+                    <tr>
+                        <td><img src="pics/phone.png"></td>
+                        <td>0905966455</td>
+                    </tr>
+                    <tr>
+                        <td><img src="pics/inbox.png"></td>
+                        <td>htailsupport@gmail.com</td>
+                    </tr>
+                </table>
+                <h3 id="center">
+                    We would love to hear from you! Whether you have a question, feedback, or just want to say hello, feel free to reach out to us using the contact details provided above. 
+            
+                </h3>
+            </div>
+            <div class="contact-right" id="contactRight">
+                <h1> Contact Us</h1>
+                
+                <div class="contactcontainer">
+                    <div class="popup" id="popup">
+                        <img src="pics/404-tick.png">
+                        <h2> Thank you!</h2>
+                        <p>Your details has been submitted.</p>
+                        <button type="button" class="pbtn" onclick="closePopup()">OK</button>
+                    </div>
+                    <div class="change" id="change">
+                        <img src="pics/404-tick.png">
+                        <h2>Thank you!</h2>
+                        <p> Your details has been submitted. </p>
+                        <button type="button" class="pbtn" onclick="closePopup()">OK</button>
+                    </div>
+                    <form id="contactForm" onsubmit="openPopup(event)">
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>First Name</label>
+                                <input type="text" name="firstName" placeholder="Example: Evami"  required>
+                            </div>
+                            <div class="input-group">
+                                <label>Last Name</label>
+                                <input type="text"  name="lastName" placeholder="Suarez" required>
+                            </div>
+                        </div>
+                            <div class="input-row">
+                            <div class="input-group">
+                                <label>Email Adress</label>
+                                <input type="text"  name="email" placeholder="yourname@email.com" required>
+                        
+                            </div>
+                            <div class="input-group">
+                                <label>Subject</label>
+                                <input type="text" name="subject" placeholder="Your subject" >
+                            </div>
+                        </div>
+                        <label>Concern</label>
+                                <textarea rows ="5" name="concern" id="concerns" placeholder="How can we help?"></textarea>
+                                <button type="submit" class="buttonew">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+  let contactRight = document.getElementById("contactRight");
+let contactForm = document.getElementById("contactForm");
+
+function openPopup(event) {
+  event.preventDefault(); 
+  const firstName = contactForm.elements["firstName"].value;
+  const lastName = contactForm.elements["lastName"].value;
+  const email = contactForm.elements["email"].value;
+  const subject = contactForm.elements["subject"].value;
+  const concern = contactForm.elements["concern"].value;
+
+  const flashMessage = document.createElement("div");
+  flashMessage.classList.add("flash-message");
+  flashMessage.innerText = `Your message has been sent successfully!\n\nDetails:\nFirst Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}\nSubject: ${subject}\nConcern: ${concern}`;
+
+  const successImage = document.createElement("img");
+  successImage.src = "pics/404-tick.png";
+  successImage.classList.add("success-image");
+  successImage.style.width = "100px"; 
+  successImage.style.height = "100px"; 
+
+  const backButton = document.createElement("button");
+  backButton.innerText = "GO BACK";
+  backButton.classList.add("back-button");
+  backButton.addEventListener("click", goBack);
+
+  contactRight.innerHTML = "";
+  contactRight.appendChild(successImage);
+  contactRight.appendChild(flashMessage);
+  contactRight.appendChild(backButton);
+}
+
+function goBack() {
+  // Reload the page to go back to the initial state
+  location.reload();
+}
+
+
+      </script>
+    <div class="footer">
+        <div class="services">
+            <h5>PET CATEGORY</h5>
+            <a href="catalogue.html#bird1">Birds</a>
+            <a href="catalogue.html#cat1">Cats</a>
+            <a href="catalogue.html#dog1">Dogs</a>
+            <a href="catalogue.html#fish">Fish</a>
+        </div>
+        <div class="services">
+            <h5>ABOUT US</h5>
+            <a href="aboutus.html#mission">OUR MISSION</a>
+            <a href="aboutus.html#vision">OUR VISION</a>
+        </div>
+        <div class="services">
+            <h5>SERVICES</h5>
+            <a href="catalogue.html">Pet Sales</a>
+            <a href="services.html">Pet Supplies</a>
+            <a href="services.html">Pet Grooming</a>
+        </div>
+        <div class="services">
+            <h5>CONTACT US</h5>
+            <a href="contactus.html" class="a"><img src="RECOURCES/placeholder-removebg-preview.png" alt="location"> Cagayan de Oro
+                City</a>
+            <a href="contactus.html"><img src="RECOURCES/call-removebg-preview.png" alt="phone"> 0905966455</a>
+            <a href="contactus.html" class="a"><img src="RECOURCES/mail-removebg-preview.png" alt="inbox"> htailsupport@gmail.com</a>
+        </div>
+        <div class="openinghours">
+            <h5>OPENING HOURS</h5>
+            <a href="#">Weekdays: 10am - 8pm</a>
+            <a href="#">Saturday: 10 am - 6 pm</a>
+            <a href="#">Sunday: Closed </a>
+        </div>
+    </div>
+    
+    
+    </body>
+    </html>
