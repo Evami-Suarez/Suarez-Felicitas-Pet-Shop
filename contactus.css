@@ -5,11 +5,8 @@
     letter-spacing: normal;
 }
 body{
-    background-color: #713912;
+    background-color: rgb(118 59 19);
 }
-
-
-
 /* suarez header css start */
 
 .head {
@@ -18,84 +15,54 @@ body{
 
 }
 
-
-
-
-div .i,
-.i1 {
-    display: inline-block;
-    flex-direction: row;
+.searchicon {
+    width: 70px;
+    margin-right: 0;
 }
 
-.i img {
-    width: 70px;
+.logo {
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .icon1{
+    margin: 0;
     height: 60px;
-    transform: transition .2s;
+    width: 70px;
 }
 .icon2{
     height: 60px;
+    width: 70px;
 }
 
-#a {
+
+
+/* #a {
     float: left;
     margin-top: 55px;
     margin-left: 20px;
-}
-
-#b {
-    float: left;
-    margin-top: 60px;
-    margin-left: -15px;
-}
-
-
-
-#c {
-    text-align: center;
-    margin-left: 9%;
-
-}
-
-#d {
-    float: right;
-
-    margin-top: 55px;
-    margin-right: 15px;
-    /* float: right;
-    top: 0px; */
-
-
-}
+} */
 
 
 
 
-.form {
-    
-    border: none;
-    border-bottom: 1px solid #fff;
-
-}
 
 
 
-.i input[type="text"] {
+
+.search input[type="text"] {
     width: 300px;
     height: 30px;
     padding: 5px;
     font-size: 16px;
-   border: none;
-   background-color: transparent;
-    
+    border: none;
+    outline: none;   
     color: #fff;
     background-color: rgb(118 59 19);
 
 }
 
-.form input::placeholder{
+.search input::placeholder{
     color: white;
 }
 
@@ -499,23 +466,7 @@ margin-left: 100px;
     background-color: #F7B319;
     color: black;
 }
-.icons{
-    display: flex;
-    justify-content: center;
 
-}
-.icons img{
-    height: 40px;
-    padding: 0px 5px;
-    transform: transition .5s;
-}
-.icons img:hover{
-    transform: scale(1.5);
-    
-}
-.icons img::after{
-    transform:scale(1);
-}
 html {
     scroll-behavior: smooth;
 }

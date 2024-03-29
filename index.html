@@ -5,32 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <title>Happy Tails! - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Single+Day&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <script src="script.js"></script>
     <div class="head">
-        <div id="headcontainer">
-        <div class="i" id="a">
             <img class="searchicon" src="pics/image-removebg-preview (2).png" alt="Searchicon">
-        </div>
-        <div class="i" id="b">
-            <form class="form">
-                <input type="text" id="search-input" name="search" placeholder="Search">
-            </form>
-        </div>
-
-        <div class="i1" id="c">
-            <img src="pics/LOGO-removebg-preview.png" alt="LOGO">
-        </div>
-
-        <div class="i" id="d">
-            <img class="icon1" src="pics/image-removebg-preview (6).png" alt="Cart">
-            <img class="icon2" src="pics/image-removebg-preview (4).png" alt="Profile">
-        </div>
-    </div>
+            <input class="search" type="text" placeholder="Search">
+            <img class="logo" src="pics/LOGO-removebg-preview.png" alt="LOGO">
+            <img class="cart" src="pics/image-removebg-preview (6).png" alt="Cart">
+            <img class="profile" src="pics/image-removebg-preview (4).png" alt="Profile">
     </div>
     <div class="navbar">
         <a href="index.html">HOME</a>
@@ -40,7 +29,6 @@
                 <i class="down"></i>
             </button>
             <div class="ddcontent">
-
                 <a href="services.html">Pet Sales</a>
                 <a href="services.html">Pet Supplies</a>
                 <a href="services.html">Pet Grooming</a>
@@ -49,12 +37,9 @@
         <a href="contactus.html">CONTACT US</a>
     </div>
     <div class="container">
-        <div class="pic">
-            <br>
-            <br>
-            <div class="pic2">
-
-                <h2>"A tail of happiness begins at Happy Tails."</h2>
+        <div class="banner">
+            <div class="banner-text">
+                <h2 class="text">"A tail of happiness begins at Happy Tails."</h2>
                 <button type="reset" onclick="location.href='catalogue.html'" id="shopbutton">SHOP NOW!</button></a>
             </div>
 
@@ -62,18 +47,18 @@
 
         <p id="choose"> CHOOSE YOUR PET</p>
         <div class="row">
-            <div class="lightcontainer">
-                <div class="textcontainer">
-                    <h3 id="bearh3">Bear</h3>
-                    <p class="pbear0">Are you in search of a devoted and faithful companion to become a cherished member of your family? Look no further than Bear, an exceptional dog who will fill your home with love, laughter, and boundless playfulness. With his endearing personality and affectionate nature, Bear is ready to bring immeasurable joy and happiness into your life.</p><br>
-                    <p class="pbear1">Whether you choose to adopt Bear from a shelter or make him a part of your family by purchasing him, you will be opening your heart to an extraordinary connection. Bear's loyalty knows no bounds, and his presence will undoubtedly enrich your everyday experiences. From long walks in the park to cozy cuddles on the couch, every moment spent with Bear will be filled with warmth and companionship.</p><br>
-                    <p class="pbear2">Don't let the opportunity to welcome Bear into your life pass you by. Take this chance to experience the unconditional love that only a furry companion can provide. Whether you choose adoption or purchase, your decision to bring Bear into your home will forever change your world for the better. Embrace the joy, love, and loyalty that Bear brings, and make him a cherished member of your family today!</p>
-                    <a href="catalogue.html#dog1"><button  id="bearmore">See more Dogs</button></a>
+            <div class="first-container">
+               <div>
+                    <h3 class="first-row-title">Bear</h3>
+                    <p class="first-row-desc">
+                        Are you in search of a devoted and faithful companion to become a cherished member of your family? Look no further than Bear, an exceptional dog who will fill your home with love, laughter, and boundless playfulness. With his endearing personality and affectionate nature, Bear is ready to bring immeasurable joy and happiness into your life. <br> <br>
+                        Whether you choose to adopt Bear from a shelter or make him a part of your family by purchasing him, you will be opening your heart to an extraordinary connection. Bear's loyalty knows no bounds, and his presence will undoubtedly enrich your everyday experiences. From long walks in the park to cozy cuddles on the couch, every moment spent with Bear will be filled with warmth and companionship. 
+                        <a class="bearmore" href="catalogue.html#dog1">See more Dogs ></a>
+                    </p><br>
                 </div>
                 <div class="bear">
-                    <img src="pics/bearpic.png" alt="bear" id="bear1">
-                </div>
-            </div>
+                    <img src="pics/bearpic.png" alt="bear">
+                </div> 
         </div>
         <div class="darkcontainer">
             <div class="charlie">
