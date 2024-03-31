@@ -1,4 +1,4 @@
-let openShopping = document.querySelector('.shopping');
+let openShopping = document.querySelector('.cart');
 let closeShopping = document.querySelector('.closeShopping');
 let list = document.querySelector('.list');
 let listCard = document.querySelector('.listCard');
@@ -109,4 +109,13 @@ function changeQuantity(key, quantity){
     }
     reloadCard();
 }
+
+window.addEventListener("scroll", () => {
+    var toTop = document.querySelector(".to-top img"); // Select the to-top img element
+    if (window.scrollY > 40) {
+      toTop.classList.add("active");
+    } else {
+      toTop.classList.remove("active");
+    }
+  });
 

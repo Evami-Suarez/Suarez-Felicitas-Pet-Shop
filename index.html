@@ -13,38 +13,47 @@
 </head>
 
 <body>
-    <script src="script.js"></script>
-    <div class="head">
-            <img class="searchicon" src="pics/image-removebg-preview (2).png" alt="Searchicon">
-            <input class="search" type="text" placeholder="Search">
+    <!-- <div class="head">
             <img class="logo" src="pics/LOGO-removebg-preview.png" alt="LOGO">
             <img class="cart" src="pics/image-removebg-preview (6).png" alt="Cart">
             <img class="profile" src="pics/image-removebg-preview (4).png" alt="Profile">
-    </div>
-    <div class="navbar">
-        <a href="index.html">HOME</a>
-        <a href="aboutus.html">ABOUT</a>
-        <div class="dropdown">
-            <button class="drop">SERVICES</a>
-                <i class="down"></i>
-            </button>
-            <div class="ddcontent">
-                <a href="services.html">Pet Sales</a>
-                <a href="services.html">Pet Supplies</a>
-                <a href="services.html">Pet Grooming</a>
-            </div>
+    </div> -->
+    <div class="logo-search-icon-navbar">
+        <div class="left-logo-search">
+            <p class="brand">
+                Happy tails
+            </p>
         </div>
-        <a href="contactus.html">CONTACT US</a>
+        <div class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="aboutus.html">ABOUT</a>
+            <div class="dropdown">
+                <button class="drop">SERVICES</a>
+                    <i class="down"></i>
+                </button>
+                <div class="ddcontent">
+                    <a href="services.html">Pet Sales</a>
+                    <a href="services.html">Pet Supplies</a>
+                    <a href="services.html">Pet Grooming</a>
+                </div>
+            </div>
+            <a href="contactus.html">CONTACT US</a>
+        </div>
+        <div class="right-cart-profile">
+            <!-- <img class="searchicon" src="pics/image-removebg-preview (2).png" alt="Searchicon"> -->
+            <input class="search" type="text" placeholder="Search">
+            <img class="cart" src="pics/image-removebg-preview (6).png" alt="Cart">
+            <span class="quantity">0</span>
+            <img class="profile" src="pics/image-removebg-preview (4).png" alt="Profile">
+        </div>
     </div>
     <div class="container">
         <div class="banner">
             <div class="banner-text">
-                <h2 class="text">"A tail of happiness begins at Happy Tails."</h2>
+                <h2 class="text">" Adopt and buy things for your pets here at an <br> affordable price"</h2>
                 <button type="reset" onclick="location.href='catalogue.html'" id="shopbutton">SHOP NOW!</button></a>
             </div>
-
         </div>
-
         <p id="choose"> CHOOSE YOUR PET</p>
         <div class="first-container">
             <div class="left-first-container">
@@ -86,7 +95,6 @@
                 </div>
             </div>
         </div>
-        
         <div class="fourth-container">
                 <div class="left-fourth-container">
                     <img class="fourth-row-pic" src="pics/bubblespic.png">
@@ -100,22 +108,7 @@
                     </p>   
                 </div>
         </div>
-        <!-- 
-            <div class="atextcontainer">
-                <h4 id="transparenttext1">ABOUT US<br>
-                    <br>
-                </h4>
-                <p id="transparenttext">Happy Tails Pet Shop is a business owned by 2 people that has been providing
-                    high-quality house pets to the people of Cagayan de Oro.
-                    Our passion for animals drives us to offer only the best products and services to our customers.
-                    <br><br>
-                    We believe that pets bring joy and happiness to our lives, and we strive to help our customers find
-                    the perfect pet that suits their lifestyle and personality.
-                    We also provide education and resources to help pet owners care for their pets and build a strong
-                    bond with them.
-                </p>
-                <br><a href="aboutus.html"><button id="aboutb">VIEW MORE</button></a>
-              
+         
             </div>
             <div class="icons">
                 <img src="pics/fb.png">
@@ -128,9 +121,49 @@
     </div>
     </div>
     <script src="script.js"></script>
-    <a href="#" class="to-top">
-       <img src="RECOURCES/up-arrow.png" alt="arrow">
-      </a>
+    <a href="#" id="scrollToTopBtn" onclick="scrollToTop()">
+        <img class="arrow-up" src="pics/up-arrow-png-24.png" alt="arrow">
+    </a>
+   
+       
+    <script>
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+};
+
+// Scroll to the top of the document when the button is clicked
+function scrollToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+}
+    </script>
+
+      
+
+
+    <div class="card">
+        <h1>Cart</h1>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+            <div class="total">0</div>
+            <div class="closeShopping">Close</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
       <div class="footer">
         <div class="services">
             <h5>PET CATEGORY</h5>
@@ -164,8 +197,7 @@
             <a href="#">Sunday: Closed </a>
         </div>
     </div>
-
-<script src="script2.js"></script>
-</body> -->
+<script src="app.js"></script>
+</body> 
 
 </html>
